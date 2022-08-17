@@ -2,6 +2,7 @@ import torch
 import glob
 import unicodedata
 import string
+import io
 
 all_letters = string.ascii_letters + " .,;'-"
 n_letters = len(all_letters)
@@ -18,7 +19,7 @@ def unicodeToAscii(s):
 
 # Read a file and split into lines
 def readLines(filename):
-    lines = open(filename, encoding="utf-8",errors="ignore").read().strip().split('\n')
+    lines = io.open(filename, encoding="utf-8").read().strip().split('\n')
     return [unicodeToAscii(line) for line in lines]
 
 # Build the category_lines dictionary, a list of lines per category

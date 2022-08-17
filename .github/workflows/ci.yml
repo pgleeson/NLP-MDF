@@ -26,4 +26,4 @@ jobs:
           python3 model.py
           python3 train.py
       - name: Predict Nationality
-        run: python predict.py Gleeson
+        run: python3 predict.py Gleeson

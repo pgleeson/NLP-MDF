@@ -22,6 +22,6 @@ jobs:
       - name: Load data
         run: python3 data.py
       - name: Train model
-        run: python3 train.py
+        run: python train.py
       - name: Predict Nationality
         run: python3 predict.py Gleeson

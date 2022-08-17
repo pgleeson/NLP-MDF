@@ -21,8 +21,6 @@ jobs:
         run: python3 -m pip install torch torchvision torchaudio
       - name: Load data
         run: python3 data.py
-      - name: Run chcp
-        run: chcp 65001
       - name: Train model
         run: python3 train.py
       - name: Predict Nationality

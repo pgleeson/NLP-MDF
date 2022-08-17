@@ -18,10 +18,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Load data
-        run: python NLP-MDF/data.py
+        run: python ../data.py
       - name: Train model
         run: |
-          python NLP-MDF/model.py
-          python NLP-MDF/train.py
+          python ../model.py
+          python ../train.py
       - name: Predict Nationality
-        run: python NLP-MDF/predict.py Gleeson
+        run: python ../predict.py Gleeson

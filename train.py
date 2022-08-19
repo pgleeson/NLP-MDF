@@ -65,7 +65,7 @@ for epoch in range(1, n_epochs + 1):
     # Print epoch number, loss, name and guess
     if epoch % print_every == 0:
         guess, guess_i = categoryFromOutput(output)
-        correct = '✓' if guess == category else '✗ (%s)' % category
+        correct = '✓' if guess == category else 'x (%s)' % category
         print('%d %d%% (%s) %.4f %s / %s %s' % (epoch, epoch / n_epochs * 100, timeSince(start), loss, line, guess, correct))
 
     # Add current loss avg to list of losses
